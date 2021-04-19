@@ -2,7 +2,7 @@
 PSEUDOCODE
     Navigate to location of PDF
     Select PDF
-    for pages in pdf page:
+    for pages in pdf:
         Split PDF per page
         save with incremented number
 '''
@@ -30,5 +30,5 @@ def pdf_splitter(path):
 
 #invoke pdf_splitter function
 if __name__ == '__main__':
-    path = '/home/xelar/Documents/MumPhotos/BROTHER/HOME_001293.pdf'
+    path = str(input('Enter path to PDF: '))
     pdf_splitter(path)
